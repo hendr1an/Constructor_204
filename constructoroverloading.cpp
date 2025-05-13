@@ -21,11 +21,22 @@ mahasiswa::mahasiswa(int INim){
 nim=INim; 
 }
 
-mahasiswa::mahasiswa(int INama){
+mahasiswa::mahasiswa(string INama){
 nama=INama;
 }
 
-mahasiswa::mahasiswa(int INim, int INama){
+mahasiswa::mahasiswa (int INim, string INama){
 nim=INim;
 nama=INama;
+}
+
+void mahasiswa::cetak(){
+    cout << endl << "NIM = " << nim << endl;
+    cout << "Nama = " << nama << endl;
+}
+
+int main(){
+    mahasiswa mhs1(102030);
+    mahasiswa mhs2("andi");
+    mahasiswa mhs3(010203, "Santi");     
 }
