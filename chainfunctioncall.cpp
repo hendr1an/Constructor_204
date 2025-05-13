@@ -12,3 +12,10 @@ class buku{
             return this->judul;
         }
 };
+
+int main()
+{
+    buku bukunya;
+    cout << bukunya.setjudul("Matematika").getJudul();
+    return 0;
+}
